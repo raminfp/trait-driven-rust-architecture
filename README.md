@@ -1,7 +1,6 @@
 # 🧱 Trait-Driven Rust Architecture
 
-This project is designed to help you practice Anchor-style coding patterns in a non-blockchain Rust application. It focuses on clean architecture principles using traits, error handling, and domain modeling.
-
+This project demonstrates clean architecture principles in Rust using traits, structured error handling, and domain modeling. It's designed to showcase professional Rust development patterns and best practices.
 ## ✨ Key Features
 
 - **Trait-first Architecture**: Contracts separated from implementation details
