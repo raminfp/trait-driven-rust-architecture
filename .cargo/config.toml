@@ -1,0 +1,5 @@
+[env]
+# Set default features for rust-analyzer
+CARGO_CFG_FEATURE_BINCODE = "1"
+CARGO_CFG_FEATURE_JSON = "1"
+CARGO_CFG_FEATURE_CLI = "1"

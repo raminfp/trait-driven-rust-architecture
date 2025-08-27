@@ -1,0 +1,25 @@
+[package]
+name = "traity-app"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["bincode", "json", "cli"]
+bincode = ["dep:bincode", "dep:serde"]
+json    = ["dep:serde_json", "dep:serde"]
+cli     = []
+
+[dependencies]
+serde = { version = "1", features = ["derive"], optional = true }
+thiserror = "1"
+
+bincode = { version = "2.0.1", features = ["serde"], optional = true }
+serde_json = { version = "1.0.143", optional = true }
+
+[[bin]]
+name = "cli"
+path = "bin/cli.rs"
+required-features = ["cli"]
+
+[dev-dependencies]
+rand = "0.8"
