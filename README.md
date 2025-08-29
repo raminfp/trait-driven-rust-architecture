@@ -180,37 +180,6 @@ cargo test --features json -- --nocapture
 cargo run --bin cli --features "cli bincode"
 ```
 
-## 🔧 Troubleshooting
-
-### Build Issues
-
-If you encounter the error `unknown proxy name: 'Cursor-1.4.5-x86_64'`:
-
-```bash
-# Update Rust toolchain
-rustup self update
-rustup update stable
-rustup default stable
-
-# Or reinstall Rust completely
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-
-### Common Problems
-
-**Problem**: Features not working as expected
-**Solution**: Make sure you're using the correct feature flags:
-```bash
-# Wrong - missing features
-cargo run --bin cli
-
-# Correct - with required features
-cargo run --bin cli --features "cli bincode"
-```
-
-**Problem**: Serialization errors
-**Solution**: Check that your data structures implement the required traits for your chosen serialization format.
-
 ## 📚 Learning Resources
 
 ### Essential Reading
